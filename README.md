@@ -1,7 +1,6 @@
 # SCP: Secret Laboratory Dockerfile
 Used to build lsuvgs/scpsl-exiled for dockerhub
 
-***
 
 ## Summary
 The lsuvgs/scpsl-exiled image was an attempt by me (Tech Officer 2023-2024) to fix issues present with our previous build, based on [t3l3tubie/scpsl](https://hub.docker.com/r/t3l3tubie/scpsl).
@@ -9,7 +8,6 @@ The lsuvgs/scpsl-exiled image was an attempt by me (Tech Officer 2023-2024) to f
 Unlike [t3l3tubie/scpsl](https://hub.docker.com/r/t3l3tubie/scpsl), this image is built in two stages from a general purpose ubuntu 20.04 base image, this provides the correct version of GLibC (which I did not feel qualified enough to try and upgrade manually due to compatibility issues) and allows for a couple of useful optimisations and improvements from the original.
 
 
-***
 ## Configuration
 
 ### ENV Variables
@@ -28,7 +26,6 @@ Unlike [t3l3tubie/scpsl](https://hub.docker.com/r/t3l3tubie/scpsl), this image i
 
 **_All volumes should be read/writable by GUID 22035 to ensure functionality_**
 
-***
 
 ## Example docker-compose.yml
 ```yaml
